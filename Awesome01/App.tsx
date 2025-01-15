@@ -1,14 +1,19 @@
-import React from 'react';
-import {View, SafeAreaView, Text } from 'react-native';
+import {SafeAreaView, ScrollView} from 'react-native';
+import React, {Component} from 'react';
+import CardsListsView from './components/CardsListsView.tsx';
+import ElevatedCards from './components/ElevatedCards.tsx';
+import FancyCards from './components/FancyCards.tsx';
 
-function App() {
-  return (
+export default class App extends Component {
+  render() {
+    return (
       <SafeAreaView>
-        <View>
-          <Text>Hello World !</Text>
-        </View>
+        <ScrollView>
+          <CardsListsView />
+          <ElevatedCards />
+          <FancyCards />
+        </ScrollView>
       </SafeAreaView>
-      );
+    );
+  }
 }
-
-export default App;
