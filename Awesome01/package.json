@@ -8,6 +8,7 @@
     "metro": "react-native start --reset-cache",
     "lint": "eslint .",
     "start": "react-native start",
+    "pod": "cd ios && bundle exec pod install",
     "test": "jest"
   },
   "dependencies": {
