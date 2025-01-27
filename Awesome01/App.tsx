@@ -4,6 +4,7 @@ import CardsListsView from './components/CardsListsView.tsx';
 import ElevatedCards from './components/ElevatedCards.tsx';
 import FancyCards from './components/FancyCards.tsx';
 import ActionCard from './components/ActionCard.tsx';
+import ContactList from './components/ContactList.tsx';
 
 export default class App extends Component {
   render() {
@@ -14,6 +15,7 @@ export default class App extends Component {
           <ElevatedCards />
           <FancyCards />
           <ActionCard />
+          <ContactList />
         </ScrollView>
       </SafeAreaView>
     );
